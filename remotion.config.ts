@@ -1,4 +1,4 @@
-import {Config} from 'remotion';
+import { Config } from 'remotion'
 
-Config.Rendering.setImageFormat('jpeg');
-Config.Output.setOverwriteOutput(true);
+Config.Rendering.setImageFormat('jpeg')
+Config.Output.setOverwriteOutput(true)
