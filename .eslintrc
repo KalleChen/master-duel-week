@@ -1,3 +1,3 @@
 {
-	"extends": ["@remotion", "kalle/typescript"]
+  "extends": ["@remotion", "kalle/typescript"]
 }

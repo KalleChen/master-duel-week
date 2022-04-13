@@ -12,6 +12,7 @@
   "repository": {},
   "license": "UNLICENSED",
   "dependencies": {
+    "@kallechen/prettier-config": "^1.0.0",
     "@remotion/bundler": "^2.3.2",
     "@remotion/cli": "^2.3.2",
     "@remotion/eslint-config": "^2.3.2",
@@ -36,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
-    "eslint-config-kalle": "0.0.5",
+    "eslint-config-kalle": "0.0.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.25.4",

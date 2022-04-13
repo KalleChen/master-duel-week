@@ -319,6 +319,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@kallechen/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@kallechen/prettier-config/-/prettier-config-1.0.0.tgz#8724f445874b020c5c09edf3435a560ea7079dca"
+  integrity sha512-cGNpcpusvu7+zpc2CYCcw1aDS5Afu9ucRsnFdNKPO8OYm5bCMyZ0W8WeX0y0vS7UX3281cA3holUEEDPL+fGhQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1562,10 +1567,10 @@ eslint-config-airbnb-typescript@^16.1.0:
   dependencies:
     eslint-config-airbnb-base "^15.0.0"
 
-eslint-config-kalle@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-kalle/-/eslint-config-kalle-0.0.5.tgz#79e9cb3871fe3c46bcd3869d2ea4c4f5cfcd2ed3"
-  integrity sha512-5VhGUyxs6pophoNyhOZKH5QHVoCaPV5IaZVUmGbdLgB5kB6gv3sy0VNVzehZU7oBYIqOcy6R2XcfLiKRdQTOXA==
+eslint-config-kalle@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-kalle/-/eslint-config-kalle-0.0.6.tgz#cac3a0a2c716924f7cd8b2dfbf579ddc58033b58"
+  integrity sha512-CkUgw1yOjXqW3VrIcTwYQYv41v3j8VEVRkHTGChJS6HAxcfZ3WKwpaNWWQUyVohyBUFnmcWn8WrbF1qohLKQxQ==
 
 eslint-config-prettier@8.3.0:
   version "8.3.0"
