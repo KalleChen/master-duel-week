@@ -8,7 +8,8 @@
     "upgrade": "remotion upgrade",
     "server": "ts-node server.tsx",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
-    "fetch": "zx scripts/fetchData.mjs"
+    "fetch-main-coin": "zx scripts/fetchMainCoinData.mjs",
+    "fetch-latest-coin": "zx scripts/fetchLatestCoinData.mjs"
   },
   "repository": {},
   "license": "UNLICENSED",

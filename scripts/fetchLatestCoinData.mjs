@@ -27,7 +27,7 @@ try {
   })
 
   fs.writeFileSync(
-    path.resolve(__dirname, '../data/today.json'),
+    path.resolve(__dirname, '../data/todayLatestCoin.json'),
     prettier.format(JSON.stringify(res?.data?.data), { parser: 'json' })
   )
 } catch (e) {
