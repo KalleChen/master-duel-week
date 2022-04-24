@@ -1,12 +1,12 @@
 import { formatInTimeZone } from 'date-fns-tz'
 
-export const BaseBackground: React.FC = (props) => {
-  const { children } = props
+export const BaseBackground: React.FC<{ title: string }> = (props) => {
+  const { children, title } = props
   return (
     <div className="relative p-6 h-full w-full bg-primary">
       <div className="h-full w-full bg-white rounded-3xl p-8">
         <h1 className="text-center text-4xl font-bold text-secondary mb-4">
-          Top 10 Coin Yesterday
+          {title}
         </h1>
         <h3 className="text-center text-xl font-bold text-textPrimary">
           {formatInTimeZone(new Date(), 'America/New_York', 'MMMM d, yyyy')}

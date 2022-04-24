@@ -1,3 +1,4 @@
+import React from 'react'
 import { Img } from 'remotion'
 
 type Props = {
@@ -23,7 +24,7 @@ export const CoinListItem = (props: Props): JSX.Element => {
         arrow_drop_up
       </span>
       <span className={`text-${isUp ? 'green' : 'red'}-500 text-md mr-8`}>
-        {percentChange}
+        {percentChange.toFixed(3)}
       </span>
     </div>
   )

@@ -3,7 +3,7 @@ import CoinList from './components/CoinList'
 
 export const MainCoinToday: React.FC = () => {
   return (
-    <BaseBackground>
+    <BaseBackground title="Main 10 coin Yesterday">
       <CoinList start={0} end={5} />
     </BaseBackground>
   )
