@@ -7,12 +7,6 @@ const COINMARKETCAP_URL = 'https://api.coingecko.com/api/v3'
 const MOST_VISITED_SUB_URL = '/coins/markets'
 
 try {
-  await $`mkdir ../data`
-} catch (e) {
-  console.log('data folder already exists', e)
-}
-
-try {
   const res = await axios.get(COINMARKETCAP_URL + MOST_VISITED_SUB_URL, {
     method: 'GET',
     headers: {

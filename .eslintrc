@@ -1,3 +1,11 @@
 {
-  "extends": ["@remotion", "kalle/typescript"]
+  "extends": ["@remotion", "kalle/typescript"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
 }

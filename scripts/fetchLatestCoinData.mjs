@@ -8,12 +8,6 @@ const API_KEY = process.env.COINMARKETCAP_API_KEY
 const MOST_VISITED_SUB_URL = '/listings/latest'
 
 try {
-  await $`mkdir ../data`
-} catch (e) {
-  console.log('data folder already exists', e)
-}
-
-try {
   const res = await axios.get(COINMARKETCAP_URL + MOST_VISITED_SUB_URL, {
     method: 'GET',
     headers: {
