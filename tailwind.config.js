@@ -6,9 +6,9 @@ module.exports = {
       colors: {
         black: '#000',
         white: '#fff',
-        primary: '#98D9C2',
-        secondary: '#F19A3E',
-        textPrimary: '#403233',
+        primary: '#001A2D ',
+        secondary: '#0B2941',
+        textPrimary: '#D9D9D9',
       },
       textColor: (theme) => theme('colors'),
     },
