@@ -2,7 +2,7 @@ import { add } from 'date-fns'
 import { formatInTimeZone } from 'date-fns-tz'
 
 import { BaseBackground } from './components/BaseBackground'
-import { DuelCircle } from './components/DuelCircle'
+import DuelCircle from './components/DuelCircle'
 
 export const DuelWeek: React.FC = () => {
   return (

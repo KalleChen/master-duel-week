@@ -3,7 +3,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels'
 import { useEffect, useRef } from 'react'
 import { Chart } from 'react-chartjs-2'
 
-import duelData from '../../data/duelData.json'
+import duelData from '../../../data/duelData.json'
 
 ChartJS.register(ArcElement, ChartDataLabels)
 
@@ -112,7 +112,7 @@ const updateChartPattern = async (chart: ChartJS) => {
   }
 }
 
-export const DuelCircle: React.FC = () => {
+export const CircleCanvas: React.FC = () => {
   const chartRef = useRef<ChartJS>(null)
 
   useEffect(() => {
@@ -121,11 +121,5 @@ export const DuelCircle: React.FC = () => {
       updateChartPattern(chart)
     }
   }, [])
-  return (
-    <div className="w-full h-full flex justify-center align-center">
-      <div className="relative w-10/12 h-10/12">
-        <Chart ref={chartRef} type="pie" data={chartData} options={options} />
-      </div>
-    </div>
-  )
+  return <Chart ref={chartRef} type="pie" data={chartData} options={options} />
 }

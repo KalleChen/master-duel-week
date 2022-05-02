@@ -51,6 +51,8 @@ try {
       if (d.tournamentPlacement === '1st Place') {
         result.firstDeck.push({
           author: d?.author,
+          deckType: d?.deckType,
+          img: d?.deckTypeImg,
           main: d.main,
           extra: d.extra,
           srPrice: d.srPrice,
