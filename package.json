@@ -4,10 +4,11 @@
   "description": "My Remotion video",
   "scripts": {
     "start": "remotion preview src/index.tsx",
-    "build": "remotion render src/index.tsx HelloWorld out/video.mp4",
+    "build": "remotion render src/index.tsx duel-week out/video.mp4",
     "upgrade": "remotion upgrade",
     "server": "ts-node server.tsx",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "lint": "eslint --fix .",
     "fetch-main-coin": "zx scripts/fetchMainCoinData.mjs",
     "fetch-latest-coin": "zx scripts/fetchLatestCoinData.mjs",
     "fetch-duel-data": "zx scripts/fetchDuelData.mjs"

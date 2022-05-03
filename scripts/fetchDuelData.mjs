@@ -5,6 +5,7 @@ import prettier from 'prettier'
 
 const DUEL_DATA_URL = process.env.DUEL_DATA_URL
 const DUEL_IMG_URL = process.env.DUEL_IMG_URL
+const DUEL_CARD_IMG_URL = process.env.DUEL_CARD_IMG_URL
 
 try {
   const res = await axios.get(DUEL_DATA_URL, {
@@ -29,8 +30,20 @@ try {
         )}?portrait=true&width=800`,
         date: d?.created,
         tournamentPlacement: d?.tournamentPlacement,
-        main: d?.main,
-        extra: d?.extra,
+        main: d?.main.map((m) => ({
+          ...m,
+          card: {
+            ...m.card,
+            img: `${DUEL_CARD_IMG_URL}/${m.card._id}_w360.webp`,
+          },
+        })),
+        extra: d?.extra.map((m) => ({
+          ...m,
+          card: {
+            ...m.card,
+            img: `${DUEL_CARD_IMG_URL}/${m.card._id}_w360.webp`,
+          },
+        })),
         srPrice: d?.srPrice,
         urPrice: d?.urPrice,
       }))

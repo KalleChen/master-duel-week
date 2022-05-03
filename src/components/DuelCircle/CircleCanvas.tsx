@@ -1,11 +1,16 @@
-import { ArcElement, Chart as ChartJS, ChartData, ChartOptions } from 'chart.js'
+import {
+  ArcElement,
+  Chart as ChartJS,
+  ChartData,
+  ChartOptions,
+  PieController,
+} from 'chart.js'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { Chart } from 'react-chartjs-2'
+import { continueRender, delayRender } from 'remotion'
 
 import duelData from '../../../data/duelData.json'
-
-ChartJS.register(ArcElement, ChartDataLabels)
 
 const statisticsData = duelData.statistics
   .filter((d) => d.count > 1)
@@ -88,7 +93,6 @@ const getImagePattern = (
     }
   })
 }
-
 const updateChartPattern = async (chart: ChartJS) => {
   const requests = statisticsData.map(
     async (stat): Promise<CanvasPattern | string> => {
@@ -113,13 +117,20 @@ const updateChartPattern = async (chart: ChartJS) => {
 }
 
 export const CircleCanvas: React.FC = () => {
+  ChartJS.register(ArcElement, ChartDataLabels, PieController)
   const chartRef = useRef<ChartJS>(null)
+  const [handle] = useState(() => delayRender())
 
-  useEffect(() => {
+  const startRender = useCallback(async () => {
     const chart = chartRef?.current
     if (chart) {
-      updateChartPattern(chart)
+      await updateChartPattern(chart)
     }
-  }, [])
+    continueRender(handle)
+  }, [handle])
+
+  useEffect(() => {
+    startRender()
+  }, [startRender])
   return <Chart ref={chartRef} type="pie" data={chartData} options={options} />
 }
