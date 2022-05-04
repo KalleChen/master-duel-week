@@ -116,6 +116,8 @@ const updateChartPattern = async (chart: ChartJS) => {
   }
 }
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
 export const CircleCanvas: React.FC = () => {
   ChartJS.register(ArcElement, ChartDataLabels, PieController)
   const chartRef = useRef<ChartJS>(null)
@@ -125,6 +127,7 @@ export const CircleCanvas: React.FC = () => {
     const chart = chartRef?.current
     if (chart) {
       await updateChartPattern(chart)
+      await delay(2000)
     }
     continueRender(handle)
   }, [handle])
