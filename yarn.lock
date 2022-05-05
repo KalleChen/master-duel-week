@@ -1306,11 +1306,6 @@ chartjs-plugin-datalabels@^2.0.0:
   resolved "https://registry.yarnpkg.com/chartjs-plugin-datalabels/-/chartjs-plugin-datalabels-2.0.0.tgz#caacefb26803d968785071eab012dde8746c5939"
   integrity sha512-WBsWihphzM0Y8fmQVm89+iy99mmgejmj5/jcsYqwxSioLRL/zqJ4Scv/eXq5ZqvG3TpojlGzZLeaOaSvDm7fwA==
 
-chartjs-plugin-labels@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/chartjs-plugin-labels/-/chartjs-plugin-labels-1.1.0.tgz#3a040fa78994e8c482ca4d47426d1e894fe679f5"
-  integrity sha512-ab1oiQT7oMnpYDn6h8biL7VZM0qIxtwfhQw1+qH7xe7Ia6lBKX/ks5rEhgI6CZ4PlRRgDFGK9Mf/T2SO9l+NCA==
-
 chokidar@^3.5.2:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -4659,6 +4654,11 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+twitter-api-v2@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.12.0.tgz#0c69fd9578a4e870404bb449cd3634275c152d2e"
+  integrity sha512-8Fv+sUYY0P1gloiBSgG1w/NSuGUIP32lDKMPVzIMX3jd4zDhiJFtCft41fKs+JqcD8m7s+4vkMO/XwyY2+NULQ==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"

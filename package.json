@@ -1,5 +1,5 @@
 {
-  "name": "crypto-today",
+  "name": "Master-Duel-Week",
   "version": "1.0.0",
   "description": "My Remotion video",
   "scripts": {
@@ -11,7 +11,8 @@
     "lint": "eslint --fix .",
     "fetch-main-coin": "zx scripts/fetchMainCoinData.mjs",
     "fetch-latest-coin": "zx scripts/fetchLatestCoinData.mjs",
-    "fetch-duel-data": "zx scripts/fetchDuelData.mjs"
+    "fetch-duel-data": "zx scripts/fetchDuelData.mjs",
+    "tweet": "zx scripts/tweet.mjs"
   },
   "repository": {},
   "license": "UNLICENSED",
@@ -35,6 +36,7 @@
     "remotion": "^2.3.2",
     "tailwindcss": "2",
     "ts-node": "^9.1.1",
+    "twitter-api-v2": "^1.12.0",
     "typescript": "^4.6.2",
     "zx": "^6.0.7"
   },
