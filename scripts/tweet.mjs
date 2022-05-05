@@ -22,7 +22,7 @@ const getMainText = () => {
     .filter((d) => d.count > 1)
     .slice(0, 10)
     .forEach((stat) => {
-      text += `🃏 ${stat.name.replace('@', '@ ')}: ${stat.count}\n`
+      text += `- ${stat.name.replace('@', '@ ')}: ${stat.count}\n`
     })
   text += '...\n\n#MasterDuel #Yugioh'
   return text

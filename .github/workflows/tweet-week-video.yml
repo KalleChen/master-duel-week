@@ -1,0 +1,33 @@
+name: Tweet Weekly Video
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '05 0 * * 1'
+env:
+  DUEL_DATA_URL: ${{secrets.DUEL_DATA_URL}}
+  DUEL_IMG_URL: ${{secrets.DUEL_IMG_URL}}
+  DUEL_CARD_IMG_URL: ${{secrets.DUEL_CARD_IMG_URL}}
+  CARD_TWO_IMG_URL: ${{secrets.CARD_TWO_IMG_URL}}
+  CARD_THREE_IMG_URL: ${{secrets.CARD_THREE_IMG_URL}}
+  TWITTER_ACCESS_TOKEN: ${{secrets.TWITTER_ACCESS_TOKEN}}
+  TWITTER_ACCESS_TOKEN_SECRET: ${{secrets.TWITTER_ACCESS_TOKEN_SECRET}}
+  TWITTER_API_KEY: ${{secrets.TWITTER_API_KEY}}
+  TWITTER_API_SECRET: ${{secrets.TWITTER_API_SECRET}}
+jobs:
+  render-tweet:
+    name: Render video
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@main
+      - run: sudo apt update
+      - run: sudo apt install ffmpeg
+      - run: yarn install
+      - run: mkdir data
+      - run: yarn fetch-duel-data
+      - run: yarn build
+      - run: yarn tweet
+      - uses: actions/upload-artifact@v2
+        with:
+          name: out.mp4
+          path: out/video.mp4
