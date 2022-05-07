@@ -9,6 +9,7 @@ A Twitter bot [@MasterDuelWeek](https://twitter.com/masterduelweek) that tweets 
 - [Remotion](https://www.remotion.dev/)
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [ChartJS](https://www.chartjs.org/)
 - [Github Actions](https://github.com/features/actions)
 - [google/zx](https://github.com/google/zx)
 
