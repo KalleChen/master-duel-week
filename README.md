@@ -1,6 +1,6 @@
 # Master Duel Wee
 
-![](https://imgur.com/30XeIhp)
+![Screen Shot 2022-05-07 at 3 07 40 PM](https://user-images.githubusercontent.com/48475056/167243761-7aa8a577-fd84-4351-ace5-707ac3ea6a68.png)
 
 A Twitter bot [@MasterDuelWeek](https://twitter.com/masterduelweek) that tweets meta decks in [Master Duel](https://www.konami.com/yugioh/masterduel/us/en/) every week
 
