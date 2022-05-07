@@ -70,7 +70,7 @@ export const DuelDeck: React.FC<{ deck: DeckList }> = (props) => {
           <h3 className="text-lg font-bold text-textPrimary mb-2">
             Main ({mainTotal})
           </h3>
-          <div className="grid grid-cols-9 gap-2 w-full">
+          <div className="grid grid-cols-8 gap-2 w-full">
             {deck.main.map((card) => (
               <Card key={card.card._id} card={card} />
             ))}
@@ -78,7 +78,7 @@ export const DuelDeck: React.FC<{ deck: DeckList }> = (props) => {
         </div>
         <div className="w-full h-full flex-shrink-0">
           <h3 className="text-lg font-bold text-textPrimary my-2">Extra</h3>
-          <div className="grid grid-cols-9 gap-2 w-full">
+          <div className="grid grid-cols-8 gap-2 w-full">
             {deck.extra.map((card) => (
               <Card key={card.card._id} card={card} />
             ))}

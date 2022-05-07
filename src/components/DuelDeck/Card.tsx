@@ -10,19 +10,19 @@ const CARD_THREE_IMG_URL =
 export const Card: React.FC<{ card: CardType }> = ({ card }) => {
   return (
     <div className="relative w-full">
-      <Img src={card?.card?.img} width={60} />
+      <Img src={card?.card?.img} width={80} />
       {card?.amount === 2 && (
         <Img
           src={CARD_TWO_IMG_URL}
           width={35}
-          className="absolute bottom-1 left-3"
+          className="absolute bottom-1 left-4"
         />
       )}
       {card?.amount === 3 && (
         <Img
           src={CARD_THREE_IMG_URL}
           width={35}
-          className="absolute bottom-1 left-3"
+          className="absolute bottom-1 left-4"
         />
       )}
     </div>
