@@ -24,7 +24,7 @@ const getMainText = () => {
     .forEach((stat) => {
       text += `- ${stat.name.replace('@', '@ ')}: ${stat.count}\n`
     })
-  text += '...\n\n#MasterDuel #Yugioh'
+  text += '...\n\n#MasterDuel #YuGiOh #YuGiOhMasterDuel #遊戯王マスターデュエル'
   return text
 }
 

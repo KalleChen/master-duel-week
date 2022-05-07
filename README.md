@@ -1,59 +1,57 @@
-# Remotion video
+# Master Duel Wee
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <img src="https://github.com/remotion-dev/logo/raw/main/withtitle/element-0.png">
-  </a>
-</p>
+![](https://imgur.com/30XeIhp)
 
-Welcome to your Remotion project!
+A Twitter bot [@MasterDuelWeek](https://twitter.com/masterduelweek) that tweets meta decks in [Master Duel](https://www.konami.com/yugioh/masterduel/us/en/) every week
 
-## Commands
+## Tecks
 
-**Install Dependencies**
+- [Remotion](https://www.remotion.dev/)
+- [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Github Actions](https://github.com/features/actions)
+- [google/zx](https://github.com/google/zx)
+
+## Getting Start
+
+### Install dependencies
 
 ```console
-yarn
+yarn install
 ```
 
-**Start Preview**
+### Setup environment variables
+
+Follow the `.env.sample` file and create `.env` file
+
+
+### Fetch duel data
+
+```console
+mkdir data
+yarn fetch-duel-data
+```
+
+### Start preview
 
 ```console
 yarn start
 ```
 
-**Render video**
+### Render video
 
 ```console
 yarn build
 ```
 
-**Server render demo**
+### Post to Twitter
 
-```console
-npm run server
+```
+yarn tweet
 ```
 
-See [docs for server-side rendering](https://www.remotion.dev/docs/ssr) here.
+## Contribute
 
-**Upgrade Remotion**
+PR is welcome.
 
-```console
-yarn run upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help [on our Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Notice that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Feel free to DM me on Twitter [@kalle_chen](https://twitter.com/kalle_chen) if you have any suggestions.
