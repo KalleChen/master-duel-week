@@ -10,7 +10,7 @@ export const RemotionVideo: React.FC = () => {
       <Composition
         id="duel-week"
         component={DuelWeek}
-        durationInFrames={duelData.firstDeck.length * 120 + 100}
+        durationInFrames={duelData.firstDeck.length * 180 + 100}
         fps={30}
         width={720}
         height={720}

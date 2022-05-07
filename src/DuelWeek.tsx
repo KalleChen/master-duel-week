@@ -29,7 +29,7 @@ export const DuelWeek: React.FC = () => {
         </BaseBackground>
       </Sequence>
       {duelData.firstDeck.map((deck, index) => (
-        <Sequence key={index} from={120 * index + 100} durationInFrames={120}>
+        <Sequence key={index} from={180 * index + 100} durationInFrames={180}>
           <BaseBackground
             title="1st Place's Deck"
             time=""
