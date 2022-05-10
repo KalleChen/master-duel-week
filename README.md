@@ -4,7 +4,7 @@
 
 A Twitter bot [@MasterDuelWeek](https://twitter.com/masterduelweek) that tweets meta decks in [Master Duel](https://www.konami.com/yugioh/masterduel/us/en/) every week
 
-## Tecks
+## Teck list
 
 - [Remotion](https://www.remotion.dev/)
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
