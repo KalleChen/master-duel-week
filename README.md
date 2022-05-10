@@ -6,6 +6,7 @@ A Twitter bot [@MasterDuelWeek](https://twitter.com/masterduelweek) that tweets 
 
 ## Teck list
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [Remotion](https://www.remotion.dev/)
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -47,7 +48,7 @@ yarn build
 
 ### Post to Twitter
 
-```
+```console
 yarn tweet
 ```
 
