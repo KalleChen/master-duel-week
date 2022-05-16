@@ -18,13 +18,18 @@ const getMainText = () => {
     'MMMM dd, yyyy'
   )} ~ ${formatInTimeZone(new Date(), 'America/New_York', 'MMMM dd, yyyy')}`
   let text = `🔥 Meta Decks on Tournament last Week\n📅 ${time}\n\n`
+  text += '#MasterDuel #YuGiOh #遊戯王マスターデュエル'
+  return text
+}
+
+const getDetailText = () => {
+  let text = ''
   data.statistics
     .filter((d) => d.count > 1)
     .slice(0, 10)
     .forEach((stat) => {
       text += `- ${stat.name.replace('@', '@ ')}: ${stat.count}\n`
     })
-  text += '...\n#MasterDuel #YuGiOh #遊戯王マスターデュエル'
   return text
 }
 
@@ -38,9 +43,13 @@ try {
   const mediaVideoId = await client.v1.uploadMedia(
     path.resolve(__dirname, '../out/video.mp4')
   )
-  const createdTweet = await client.v1.tweet(getMainText(), {
-    media_ids: mediaVideoId,
-  })
+  const createdTweet = await client.v1.tweetThread([
+    {
+      status: getMainText(),
+      media_ids: mediaVideoId,
+    },
+    getDetailText(),
+  ])
 } catch (e) {
   console.log(e)
 }
