@@ -43,10 +43,10 @@ try {
   const mediaVideoId = await client.v1.uploadMedia(
     path.resolve(__dirname, '../out/video.mp4')
   )
-  const createdTweet = await client.v1.tweetThread([
+  const createdTweet = await client.v2.tweetThread([
     {
-      status: getMainText(),
-      media_ids: mediaVideoId,
+      text: getMainText(),
+      media: { media_ids: [mediaVideoId] },
     },
     getDetailText(),
   ])
